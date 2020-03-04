@@ -126,6 +126,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  background-color: green;
+  margin: 0 auto;
+}
 a {
   text-decoration: none;
   text-transform: none;
@@ -138,11 +142,12 @@ button {
   background-color: yellow;
 }
 .mainContent {
-  background-color: green;
+  padding: 40px;
   padding-top: 50px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .about {
-  max-width: 90%;
   margin: 0 auto;
   background-color: magenta;
   display: flex;
@@ -153,23 +158,25 @@ button {
   max-width: 25%;
 }
 .top {
+  margin-top: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .bot {
+  margin-top: 30px;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .content {
   width: 40%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .photo {
-  margin: 20px;
   width: 50%;
   height: auto;
   border: 10px solid magenta;
