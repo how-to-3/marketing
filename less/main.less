@@ -1,20 +1,30 @@
 
 .mainContent{
-    
+    color: @cpc;
     padding:40px;
     padding-top: 50px;
     max-width: 1500px;
     margin: 0 auto;
 }
-
+.shadow{
+    box-shadow:@shade;
+}
 .about{
     margin:0 auto;
-    background-color: @cpe;
+    background-color: @cpb;
     display:flex;
     justify-content:space-around;
+    @media @mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
     div{
         margin: 5%;
         max-width:25%;
+        @media @mobile{
+            max-width: 75%;
+        }
     }
 }
 
@@ -23,6 +33,9 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    @media @mobile{
+        flex-direction: column-reverse;
+    }
 
 }
 .bot{
@@ -31,16 +44,24 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    @media @mobile{
+        flex-direction: column-reverse;
+    }
 }
 .content{
     width:40%;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin:10%;
+
 }
 .photo{
+    box-shadow: @shade;
     width: 50%;
     height: auto;
-    border: 10px solid @cpe;
-    padding:0px
+    border: 10px solid @cpb;
+    border-bottom: 7px solid @cpb;
+    background-color: @cpb;
+    padding:0px;
 }
